@@ -30,11 +30,34 @@ body {background-color:#232323;color:white;font-family:Comic Sans MS}
 h1 {text-align:center;font-size:50px;}
 h2 {text-align:left;font-size:40px;}
 ul {font-size:30px;}
-p {}
+p {font-size:20px;}
 
 </style>
 
-<h1>Arren Meuchel's <i><span style="color:#cc0099;">Website</span></i></h1>
+<h1>Arren Meuchel's <i><span style="color:#cc0099;">Website</span></i>
+</h1>
+<p id="splash">
+Arren:
+<script>
+	window.onload = (event) => {
+		var splashList = new Array();
+		splashList[0]="Owns a BotCon 2000 Apelinq and is therefore, (probably) better than you.";
+		splashList[1]="Thinks Galvatron II, Dinobot II, and Prowl II are good names. If it's good enough for popes and kings, it's good enough for Transformers.";
+		splashList[2]="Thinks Beast Machines is really good, actually.";
+		splashList[3]="Would like to tell you about The Transformers";
+		splashList[4]="Keeps forgetting his semicolons.";
+		splashList[5]="Wishes Visual Studio had speelcheck for strins.";
+		splashList[6]="Shares a birthday with David M Willis";
+		splashList[7]="Is testing if <a href=\"https://tfwiki.net/wiki/Jeff_Gordon\">links</a> work";
+		splashList[8]="Should really get to bed.";
+		splashList[9]="Would like to apologize for the inconvenience as you Random Message was lost in transit. Please click <a href=\"https://arrenm.github.io\">here</a> to order a replacement."
+		var randomValue = splashList[Math.floor(Math.random()*splashList.length)];
+		document.getElementById("splash").innerHTML += randomValue;
+		console.log(randomValue);
+	}
+</script>
+</p>
+
 <h2>Socials</h2>
 <p>
 	<ul>
