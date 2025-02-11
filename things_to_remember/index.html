@@ -1,0 +1,97 @@
+<!-- Things to Remember Page -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arren Meuchel's Things to Remember</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+<style>
+a:link {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body {background-color:#232323;color:white;font-family:Times New Roman}
+h1 {text-align:center;font-size:50px;}
+h2 {text-align:left;font-size:40px;}
+ul {font-size:30px;}
+p {font-size:25px;}
+
+</style>
+
+<h1>Things to Remember</h1>
+<p>
+	<ul data-random>
+		<li id="vp"><i>"Remember always that the human spirit is unequaled in the multiverse. As much as you have to learn from us, so too do we Cybertronians have to learn from you.
+		Continue to teach us, continue to live your amazing, wonderful, unique, silly, profound lives."</i><br> - Vector Prime's final message as a multiversal singularity,
+			<a href="https://tfwiki.net/wiki/Source:Ask_Vector_Prime/Facebook#September_30.2C_2015">Ask Vector Prime Facebook Page</a>, September 30th 2015;
+
+		<script  type="text/javascript">
+		//script courtesy of https://stackoverflow.com/a/43443161
+        var initialDate = new Date(2015, 8, 30);
+        var now = Date.now();
+        var difference = now - initialDate;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay);
+
+        document.getElementById("vp").innerHTML += daysSince.toString() +" days ago.";
+
+		</script>
+		</li>
+
+		<li>Drink water</li>
+
+		<li>Make things</li>
+
+		
+	</ul>
+</p>
+<h2><a href="../"><- Back</a></h2>
+<p id="updated">This page was last updated: 
+
+<script  type="text/javascript">
+		//script courtesy of https://stackoverflow.com/a/43443161
+        var initialDate = new Date(2025, 1, 11); //january is month 0
+        var now = Date.now();
+        var difference = now - initialDate;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay);
+
+        document.getElementById("updated").innerHTML += daysSince.toString() +" days ago.";
+
+</script>
+
+<!-- Randomize list -->
+<script>
+	//script courtesy of https://stackoverflow.com/a/11972692
+	var ul = document.querySelectorAll("[data-random]");
+	for(var j = ul.length-1; j>=0; j--){
+		for (var i = ul[j].children.length; i >= 0; i--) {
+			ul[j].appendChild(ul[j].children[Math.random() * i | 0]);
+		}
+	}
+</script>
+
+</p>
+</body>
+</html>

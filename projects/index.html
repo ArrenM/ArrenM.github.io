@@ -1,5 +1,10 @@
+<!-- Projects Page -->
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Arren Meuchel's Projects</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
 <body>
 <style>
 a:link {
@@ -30,15 +35,43 @@ body {background-color:#232323;color:white;font-family:Comic Sans MS}
 h1 {text-align:center;font-size:50px;}
 h2 {text-align:left;font-size:40px;}
 ul {font-size:30px;}
-p {}
+p {font-size:25px;}
+p1 {font-size:15px;color:#ff99ff;}
 
 </style>
 
-<h1>Arren Meuchel's Projects</h1>
+<h1>Arren Meuchel's <i><span style="color:#0033cc;">Projects</span></i></h1>
+<h2>Games</h2>
 <p>
 	<ul>
-		<li><a href="https://arrenm.github.io/Personal-Trajectory">Personal Trajectory (Finished)</a></li>
+		<li><a href="https://arrenm.github.io/Personal-Trajectory">Personal Trajectory (Finished July 12th 2024)</a></li>
 	</ul>
+</p>
+
+<h2>Other</h2>
+<p>
+	<ul>
+		<li><a href="../">Github Page (WIP)</a>
+		<p1><i>See Also: <a href="https://en.wikipedia.org/wiki/Recursion">Recursion at Wikipedia.org</a></i></p1>
+		</li>
+	</ul>
+</p>
+
+<h2><a href="../"><- Back</a></h2>
+<p id="updated">This page was last updated: 
+
+<script  type="text/javascript">
+		//script courtesy of https://stackoverflow.com/a/43443161
+        var initialDate = new Date(2025, 1, 11); //january is month 0
+        var now = Date.now();
+        var difference = now - initialDate;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay);
+
+        document.getElementById("updated").innerHTML += daysSince.toString() +" days ago.";
+
+</script>
+
 </p>
 </body>
 </html>
