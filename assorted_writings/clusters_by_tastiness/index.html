@@ -1,0 +1,211 @@
+<!-- Universal clusters ranked by how tasty they sound -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tastiness of Universal Clusters</title>
+	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+</head>
+<body>
+<style>
+a:link {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+body {background-color:#232323;color:white;font-family:Comic Sans MS}
+h1 {text-align:center;font-size:50px;}
+h2 {text-align:center;font-size:30px;}
+ul {font-size:30px;}
+ol {font-size:30px;}
+dl {
+    font-size:20px;
+
+}
+dt{
+    display: list-item;
+    list-style-type: disc;
+    margin-left:2em;  
+}
+
+dd{
+    margin-left:5em; 
+    font-size:20px;
+}
+p {font-size:25px;}
+
+button{
+    background-color: #003388;
+    color: #dd88ee;
+    transition-duration: 0.4s;
+    padding: 15px 32px;
+    text-align: center;
+    position:relative;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #2255aa;
+    font-size: 20px;
+    color: #ffaaff;
+}
+
+button:active{
+    background-color: #001166;
+    font-size: 12px;
+    color: #bb66cc;
+}
+
+.author{
+    font-size:20px;
+    font-style:italic;
+    font-weight:light;
+    padding-bottom:50px;
+    height:0px;
+}
+
+.title{
+    font-style:italic;
+    font-size:50px;
+    height:20px;
+}
+
+p1 {font-size:15px;color:#ff99ff;}
+
+</style>
+
+<h2 class="title">Tastiness of Universal Clusters</h2>
+<h1 class="author">By Arren Meuchel</h1>
+
+<h2>
+The 
+<a href="https://tfwiki.net/wiki/Transcendent_Technomorph">Transcendent Technomorphs</a>
+have weird names for 
+<a href="https://tfwiki.net/wiki/Universal_cluster">universal clusters</a>. 
+I think some of them sound like they'd taste good.
+</h2>
+
+<div style="text-align:center">
+<button type="button" id="skip" onclick="impatient()">Just show me the list</button>
+</div>
+
+<script>
+    var clicks = 0;
+    function impatient(){
+        window.location.href="#list";
+        if(clicks==0){
+            document.getElementById("impatient").innerHTML="You need to learn to appreciate a written work in it's entirety.";
+        }else if(clicks<10){
+            document.getElementById("skip").innerHTML="Gain 1 impatience point";
+            document.getElementById("impatient").innerHTML="You need to learn to appreciate a written work in it's entirety.<br>"
+                +"You have "+clicks+" impatience points.";
+        }else if(clicks<25){
+            document.getElementById("impatient").innerHTML="You need to learn to appreciate a written work in it's entirety.<br>"
+                +"You have "+clicks+" impatience points.<br>"
+                +"Nothing happens if you keep getting points you know.";
+        }else{
+            document.getElementById("impatient").innerHTML="You need to learn to appreciate a written work in it's entirety.<br>"
+                +"You have "+clicks+" impatience points.<br>"
+                +"Ok, well, there was one more thing. But thats it. Feel free to F12 if you don't trust me.";
+        }
+        clicks++
+    }
+</script>
+
+<p> The 21 clusters are as follows:</p>
+
+<dl>
+    <p>&emsp;The Bigguns</p>
+    <dt>Primax</dt>
+        <dd>Generation 1 and Beast Wars. Most of the multiverse</dd>
+    <dt>Viron</dt>
+        <dd>Robots in Disguise (2001). Notably, Car Robots (2000) is Primax</dd>
+    <dt>Aurex</dt>
+        <dd>Unicron Trilogy</dd>
+    <dt>Tyran</dt>
+        <dd>Bayverse</dd>
+    <dt>Malgus</dt>
+        <dd>Animated</dd>
+    <dt>Uniend</dt>
+        <dd>Aligned, which is both part of the multiverse, and includes multiple universal streams. Despite Hasbro's best efforts.</dd>
+
+    <p>&emsp;The Littluns</p>
+    <dt>Fornax</dt>
+        <dd>Kre-O</dd>
+    <dt>Iocus</dt>
+        <dd>The weird shit. Hero Mashers, Bot Shots, Construct-Bots, Battle Mashers, Attacktix, et cetera. (yeah, I know some Latin)</dd>
+    <dt>Nexus</dt>
+        <dd>Where the Transcendent Technomorphs are from. Not as important as they like to think.</dd>
+    <dt>Quadwal</dt>
+        <dd>The ""Real"" world. Only cluster I've been to. (So far...)</dd>
+    <dt>Yayayarst</dt>
+        <dd>Go-Bots. Playskool, not Tonka.</dd>
+
+    <p>&emsp;The Not-Actually-Transformers-uns</p>
+    <dt>Cymond</dt>
+        <dd>Takara robots. Diaclone, Brave, Micro Change, Zoids, and more!.</dd>
+    <dt>Gargent</dt>
+        <dd>GoBots. Tonka, not Playskool.</dd>
+    <dt>Lukas</dt>
+        <dd>Star Wars Transformers. Despite the name, they're just transforming mecha, not Transformers</dt>
+    <dt>Rovio</dt>
+        <dd>Angry Birds Transformers. Despite the name, they're just birds and pigs mutated by the EggSpark, not Transformers</dt>
+    <dt>Xobitor</dt>
+        <dd>Robotix. Hasbro robots. Put the future in your hands.</dt>
+
+</dl>
+<h2 id="list">The List <span style="font-size:20px;">(Ordered form Tastiest to Tasty-least)</span><h2>
+<h3 id="impatient" style="color:red;"></h3>
+<ol type="1">
+    <!-- example line for copy-and-paste -->
+    <!-- <li>Cluster name<span style="font-size:15px;color:#ee5599;"> Explanation</span></li> -->
+    <li>Yayayarst<span style="font-size:15px;color:#ee5599;"> That's a juicy berry if I've ever heard of one.</span></li>
+    <li>Rovio<span style="font-size:15px;color:#ee5599;"> I don't care that it's Finnish for pyre, it sounds like a kind of pasta.</span></li>
+    <li>Iocus<span style="font-size:15px;color:#ee5599;"> Chemically engineered snack food. Not healthy, but literally designed to be tasty.</span></li>
+    <li>Malgus<span style="font-size:15px;color:#ee5599;"> Some kinda freaky stew someone on Tumblr made. Not ideal, but better than you'd expect.</span></li>
+    <li>Aurex<span style="font-size:15px;color:#ee5599;"> Kinda like artichoke. I don't really like artichoke, but on this list, edibility is a surprisingly high bar.</span></li>
+    <li>Tyran<span style="font-size:15px;color:#ee5599;"> Sounds like a nut. I don't really like nuts.</span></li>
+    <li>Uniend<span style="font-size:15px;color:#ee5599;"> Some kinda onion fruit thing. Acceptable, but certainly not something I'd choose.</span></li>
+    <li>Gargent<span style="font-size:15px;color:#ee5599;"> Something leathery or jerky-like. Practical nutrition, but not particularly tasty.</span></li>
+
+</ol>
+
+<h2 style="position:fixed; bottom:-30px; right:20px;"><a href="../"><- Back</a></h2>
+<h2 style="position:fixed; bottom:20px; right:20px;"><a href="https://arrenm.github.io/">^ Home</a></h2>
+
+<p id="updated">This page was last updated: 
+
+<script  type="text/javascript">
+		//script courtesy of https://stackoverflow.com/a/43443161
+        var initialDate = new Date(2025, 1, 12); //january is month 0
+        var now = Date.now();
+        var difference = now - initialDate;
+        var millisecondsPerDay = 24 * 60 * 60 * 1000;
+        var daysSince = Math.floor(difference / millisecondsPerDay);
+
+        document.getElementById("updated").innerHTML += daysSince.toString() +" days ago.";
+
+</script>
+
+</p>
+</body>
+</html>
