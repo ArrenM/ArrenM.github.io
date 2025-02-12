@@ -63,27 +63,24 @@ Arren also:
 <script>
 	window.onload = (event) => {
 		var splashList = new Array();
-		splashList[0]="Owns a BotCon 2000 Apelinq and is therefore, (probably) better than you.";
-		splashList[1]="Thinks Galvatron II, Dinobot II, and Prowl II are good names, because if it's good enough for popes and kings, it's good enough for Transformers.";
-		splashList[2]="Thinks Beast Machines is really good, actually.";
-		splashList[3]="Would like to tell you about The Transformers";
-		splashList[4]="Keeps forgetting his semicolons.";
-		splashList[5]="Wishes Visual Studio had speelcheck for strins.";
-		splashList[6]="Shares a birthday with David M Willis";
-		splashList[7]="Is testing if <a href=\"https://tfwiki.net/wiki/Jeff_Gordon\">links</a> work";
-		splashList[8]="Should really get to bed.";
-		splashList[9]="Would like to apologize for the inconvenience as your Random Message was lost in transit. Please click <a href=\"\">here</a> to order a replacement.";
-		splashList[10]="Knows the meaning of life, but won't tell you.";
-		splashList[11]="Contains over <i>15</i> bones!";
-		splashList[12]="Owns a Studio Series Rise of the Beasts Apelinq and is therfore, (probably) about the same as you.";
-		splashList[13]="May or may not be an instance of <a href=\"https://tfwiki.net/wiki/Sideways\">Sideways</a>."
-		splashList[14]="Wonders if <a href=\"https://tfwiki.net/wiki/Special:Random\">you're feeling lucky, punk</a>.";
-		splashList[15]="Would like to inform you that the number of unique splashes for this page is currently ";
-		splashList[16]="Invites you to inspect his <a href=\"https://github.com/ArrenM/ArrenM.github.io\">spaghetti code</a> for this page.";
 
-		splashList[15]+=splashList.length + ".";
-		var randomValue = splashList[Math.floor(Math.random()*splashList.length)];
-		document.getElementById("splash").innerHTML += randomValue;
+		splashList.push("Owns a BotCon 2000 Apelinq and is therefore, (probably) better than you.");
+		splashList.push("Thinks Galvatron II, Dinobot II, and Prowl II are good names, because if it's good enough for popes and kings, it's good enough for Transformers.");
+		splashList.push("Thinks Beast Machines is really good, actually.");
+		splashList.push("Would like to tell you about The Transformers");
+		splashList.push("Keeps forgetting his semicolons.");
+		splashList.push("Wishes Visual Studio had speelcheck for strins.");
+		splashList.push("Is testing if <a href=\"https://tfwiki.net/wiki/Jeff_Gordon\">links</a> work");
+		splashList.push("Apologizes for the inconvenience as your splash was lost in transit. Please click <a href=\"\">here</a> to receive a replacement.");
+		splashList.push("Knows the meaning of life, but won't tell you.");
+		splashList.push("Contains over <i>15</i> bones!");
+		splashList.push("Owns a Studio Series Rise of the Beasts Apelinq and is therfore, (probably) about the same as you.");
+		splashList.push("May or may not be an instance of <a href=\"https://tfwiki.net/wiki/Sideways\">Sideways</a>.");
+		splashList.push("Wonders if <a href=\"https://tfwiki.net/wiki/Special:Random\">you're feeling lucky, punk</a>.");
+		splashList.push("Invites you to inspect his <a href=\"https://github.com/ArrenM/ArrenM.github.io\">spaghetti code</a> for this page.");
+
+		var randomValue = Math.floor(Math.random()*splashList.length);
+		document.getElementById("splash").innerHTML += splashList[randomValue] + " <span style=\"font-size:10px\">" + randomValue +"</span>";
 		//console.log(randomValue);
 	}
 </script>
@@ -110,7 +107,7 @@ Arren also:
 	</ul>
 </p>
 
-<h2>Also Check Out <span style="font-size:20px;">(hover for more)</span></h2>
+<h2>Also Check Out</h2>
 <p>
 	<ul id="also" data-alpha>
 		<li><a href="https://latticeparable.tumblr.com/" title="Lattice Parable on Tumblr">Lattice Parable</a></li>
@@ -161,7 +158,7 @@ Arren also:
 		var ulTexts = new Array(ul.children.length);
 
 		for(i = 0; i < ul.children.length; i++){
-			ulTexts[i] = ul.children[i].firstChild.text + "¬" + ul.children[i].innerHTML;
+			ulTexts[i] = ul.children[i].firstChild.text + "¬" + ul.children[i].innerHTML + "¬" + ul.children[i].firstChild.title;
 			//console.log(ulTexts[i]);
 		}
 
@@ -172,8 +169,10 @@ Arren also:
 		for(i = 0; i < ul.children.length; i++){
 			var parts = ulTexts[i].split("¬");
 			ul.children[i].firstChild.innerHTML = parts[1];
+			ul.children[i].innerHTML += " <span style=\"font-size:15px\">" + parts[2] +"</span>";
 			//console.log(parts[1]);
-			//console.log(ul.children[i].firstChild)
+			//console.log(ul.children[i].firstChild);
+			//console.log(ul.children[i].firstChild.title);
 		 }
 	}
 	
