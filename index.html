@@ -39,7 +39,7 @@ h1 {
 	position:relative;
 	z-index: 1;
 }
-h2 {text-align:left;font-size:40px;}
+h2 {text-align:center;font-size:40px;}
 
 h3 {
 	text-align:center;
@@ -51,6 +51,11 @@ h3 {
 	border-style:double;
 	background:#000000;
 	width:70%;
+}
+
+.container{
+	display:flex;
+	justify-content: space-around;
 }
 
 ul {font-size:30px;}
@@ -110,6 +115,7 @@ Arren also:
 		splashList.push("Invites you to inspect his <a href=\"https://github.com/ArrenM/ArrenM.github.io\">spaghetti code</a> for this page.");
 		splashList.push("Is reminding you you can check out the <a href=\"https://github.com/ArrenM/ArrenM.github.io/commits/main/\">commit history</a> to see my mistakes.");
 
+		splashList.push("Wants you to know there are over "+Math.floor(splashList.length*Math.random())+" different possible splashes!");
 		var randomValue = Math.floor(Math.random()*splashList.length);
 		document.getElementById("splash").innerHTML += splashList[randomValue] + " <span style=\"font-size:10px\">" + randomValue +"</span>";
 		//console.log(randomValue);
@@ -117,45 +123,53 @@ Arren also:
 </script>
 
 </p>
+<div class="container">
+	<div>
+		<h2>Find Me At</h2>
+		<p>	
+			<ul>
+				<li><a href="https://arrenm.bsky.social">Bluesky <img src="images/bskyFavi.png"; alt="Bluesky Logo"; width=25; height=25;></a></li>
+				<li><a href="https://youtube.com/@MeuchelArren">Youtube <img src="images/youtubeFavi.ico"; alt="Youtube Logo"; width=25; height=25;></a></li>
+				<li><a href="https://twitter.com/MeuchelArren">Twitter <img src="images/xFavi.ico"; alt="X Logo"; width=25; height=25;></a></li>
+				<li><a href="https://www.github.com/ArrenM">Github Profile <img src="images/githubFavi.png"; alt="Github Logo"; width=25; height=25;></a></li>
+				<li><a href="https://www.tumblr.com/arrenmeuchel">Tumblr <img src="images/tumblrFavi.ico"; alt="Tumblr Logo"; width=25; height=25;></a></li>
+				<li><a href="mailto:arren.meuchel@gmail.com">Email <img src="images/gmailFavi.ico"; alt="Gmail Logo"; width=25; height=25;></a>
+			</ul>
+		</p>
+	</div>
 
-<h2>Find Me At</h2>
-<p>	
-	<ul>
-		<li><a href="https://arrenm.bsky.social">Bluesky <img src="images/bskyFavi.png"; alt="Bluesky Logo"; width=25; height=25;></a></li>
-		<li><a href="https://youtube.com/@MeuchelArren">Youtube <img src="images/youtubeFavi.ico"; alt="Youtube Logo"; width=25; height=25;></a></li>
-		<li><a href="https://twitter.com/MeuchelArren">Twitter <img src="images/xFavi.ico"; alt="X Logo"; width=25; height=25;></a></li>
-		<li><a href="https://www.github.com/ArrenM">Github Profile <img src="images/githubFavi.png"; alt="Github Logo"; width=25; height=25;></a></li>
-		<li><a href="https://www.tumblr.com/arrenmeuchel">Tumblr <img src="images/tumblrFavi.ico"; alt="Tumblr Logo"; width=25; height=25;></a></li>
-		<li><a href="mailto:arren.meuchel@gmail.com">Email <img src="images/gmailFavi.ico"; alt="Gmail Logo"; width=25; height=25;></a>
-	</ul>
-</p>
+	<div>
+		<h2>Subpages</h2>
+		<p>
+			<ul>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="assorted_writings.html">Assorted Writings</a></li>
+				<li><a href="things_to_remember.html">Things to Remember</a></li>
+			</ul>
+		</p>
+	</div>
+</div>
 
-
-<h2>Subpages</h2>
-<p>
-	<ul>
-		<li><a href="projects.html">Projects</a></li>
-		<li><a href="assorted_writings.html">Assorted Writings</a></li>
-		<li><a href="things_to_remember.html">Things to Remember</a></li>
-	</ul>
-</p>
-
-<h2>Also Check Out</h2>
-<p>
-	<ul id="also" data-alpha>
-		<li><a href="https://latticeparable.tumblr.com/" title="Lattice Parable on Tumblr">Lattice Parable</a></li>
-		<li><a href="https://www.dumbingofage.com/" title="A college webcomic by David M Willis">Dumbing of Age</a></li>
-		<li><a href="https://www.sbnation.com/a/17776-football/" title="What football will look like in the future">17776</a></li>
-		<li><a href="https://www.shawnthemiller.com/" title="Developer of Omochapon, currently developing Tiltshift; a game with robots">ShawnTheMiller</a></li>
-		<li><a href="https://gravityloop.org" title="Quarterly speculative fiction anthology">Gravity Loop</a></li>
-		<li><a href="https://tripletakeover.com" title="Fortnightly podcast about Transformers and other toy properties">Triple Takeover Toycast</a></li>
-		<li><a href="https://tfraw.com" title="Digital archive of historic Transformers media">TFRaw.com</a></li>
-		<li><a href="http://teamew.bsky.social/" title="TeaMew on Bluesky">TeaMew</a></li>
-		<li><a href="https://x.com/The_True_GC" title="The Game Challenger on Twitter">The Game Challenger</a></li>
-		<li><a href="https://tfwiki.net/wiki/Source:Axiom_Nexus_News" title="Axiom Nexus News archive at TFWiki.net">Axiom Nexus News</a></li>
-		<li><a href="https://www.w3schools.com/" title="Huge help for making this site">W3Schools</a></li>
-	</ul>
-</p>
+<div class="container">
+	<div>
+		<h2>Also Check Out</h2>
+		<p>
+			<ul id="also" data-alpha>
+				<li><a href="https://latticeparable.tumblr.com/" title="Lattice Parable on Tumblr">Lattice Parable</a></li>
+				<li><a href="https://www.dumbingofage.com/" title="A college webcomic by David M Willis">Dumbing of Age</a></li>
+				<li><a href="https://www.sbnation.com/a/17776-football/" title="What football will look like in the future">17776</a></li>
+				<li><a href="https://www.shawnthemiller.com/" title="Developer of Omochapon, currently developing Tiltshift; a game with robots">ShawnTheMiller</a></li>
+				<li><a href="https://gravityloop.org" title="Quarterly speculative fiction anthology">Gravity Loop</a></li>
+				<li><a href="https://tripletakeover.com" title="Fortnightly podcast about Transformers and other toy properties">Triple Takeover Toycast</a></li>
+				<li><a href="https://tfraw.com" title="Digital archive of historic Transformers media">TFRaw.com</a></li>
+				<li><a href="http://teamew.bsky.social/" title="TeaMew on Bluesky">TeaMew</a></li>
+				<li><a href="https://x.com/The_True_GC" title="The Game Challenger on Twitter">The Game Challenger</a></li>
+				<li><a href="https://tfwiki.net/wiki/Source:Axiom_Nexus_News" title="Axiom Nexus News archive at TFWiki.net">Axiom Nexus News</a></li>
+				<li><a href="https://www.w3schools.com/" title="Huge help for making this site">W3Schools</a></li>
+			</ul>
+		</p>
+	</div>
+</div>
 
 <p id="updated" style="color:#bbbbbb;">This page was last updated: 
 
