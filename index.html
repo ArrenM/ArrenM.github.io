@@ -120,10 +120,11 @@ Arren also:
 		splashList.push("Wonders if <a href=\"https://tfwiki.net/wiki/Special:Random\">you're feeling lucky, punk</a>.");
 		splashList.push("Invites you to inspect his <a href=\"https://github.com/ArrenM/ArrenM.github.io\">spaghetti code</a> for this page.");
 		splashList.push("Is reminding you you can check out the <a href=\"https://github.com/ArrenM/ArrenM.github.io/commits/main/\">commit history</a> to see my mistakes.");
+		splashList.push("Finally understands the true value of time, for it is the bonds between us that give time its meaning.");
 
 		splashList.push("Wants you to know there are over "+Math.floor(splashList.length*Math.random())+" different possible splashes!");
 		var randomValue = Math.floor(Math.random()*splashList.length);
-		document.getElementById("splash").innerHTML += splashList[randomValue] + " <span style=\"font-size:10px\">" + randomValue +"</span>";
+		document.getElementById("splash").innerHTML += splashList[randomValue];
 		//console.log(randomValue);
 	}
 </script>
