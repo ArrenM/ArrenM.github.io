@@ -32,6 +32,12 @@ a:active {
   text-decoration: underline;
 }
 
+a.disabled{
+	pointer-events:none;
+	color:inherit;
+	text-decoration:inherit;
+}
+
 body {background-color:#232323;color:white;font-family:Comic Sans MS}
 h1 {
 	text-align:center;
@@ -145,6 +151,7 @@ Arren also:
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="assorted_writings.html">Assorted Writings</a></li>
 				<li><a href="things_to_remember.html">Things to Remember</a></li>
+				<li><a href="experiments.html">Experiments</a></li>
 			</ul>
 		</p>
 	</div>
@@ -155,7 +162,7 @@ Arren also:
 		<h2>Also Check Out</h2>
 		<p>
 			<ul id="also" data-alpha>
-				<li><a href="https://latticeparable.tumblr.com/" title="Lattice Parable on Tumblr">Lattice Parable</a></li>
+				<li><a href="https://latticeparable.tumblr.com" title="">Lattice Parable</a></li>
 				<li><a href="https://www.dumbingofage.com/" title="A college webcomic by David M Willis">Dumbing of Age</a></li>
 				<li><a href="https://www.sbnation.com/a/17776-football/" title="What football will look like in the future">17776</a></li>
 				<li><a href="https://www.shawnthemiller.com/" title="Developer of Omochapon, currently developing Tiltshift; a game with robots">ShawnTheMiller</a></li>
@@ -175,7 +182,7 @@ Arren also:
 
 	<script  type="text/javascript">
 			//script courtesy of https://stackoverflow.com/a/43443161
-			var initialDate = new Date(2025, 1, 12); //january is month 0
+			var initialDate = new Date(2025, 1, 13); //january is month 0
 			var now = Date.now();
 			var difference = now - initialDate;
 			var millisecondsPerDay = 24 * 60 * 60 * 1000;
