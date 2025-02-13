@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Arren Meuchel's Experiments</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<title>Input test</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -41,17 +41,31 @@ p1 {font-size:15px;color:#ff99ff;}
 
 </style>
 
-<h1>Arren Meuchel's <i><span style="color:#ff0000; text-decoration-line:underline; text-decoration-style:dotted;">Experiments</span></i></h1>
+<input id="num" type=number></input>
+<button onclick="submit()">submit</button>
+<h2 id="result"></h2>
 
-<h2>HTML/CSS/Javascript</h2>
-<p>
-	<ul>
-		<li><a href="experiments/input_test.html">Input test</a></li>
-	</ul>
-</p>
+<script>
+    function submit(){
+        var num = document.getElementById("num").value;
+        var even ="";
+        if(num==69 || num==420){
+            document.getElementById("result").innerHTML = "not impressed";
+            return;
+        }
+        if(num%2==0){
+            even=" is even.";
+        }else if(num%2==1){
+            even=" is odd.";
+        }else{
+            even=" is not an integer."
+        }
+        document.getElementById("result").innerHTML="Your number: "+ num + even;
+    }
 
+</script>
 
-<h2 style="position:fixed; bottom:-30px; right:20px;"><a href="index.html"><- Back</a></h2>
+<h2 style="position:fixed; bottom:-30px; right:20px;"><a href="../experiments.html"><- Back</a></h2>
 <p id="updated" style="color:#bbbbbb; padding-bottom:50px;">This page was last updated: 
 
 <script  type="text/javascript">
