@@ -35,20 +35,42 @@ a:active {
 body {background-color:#232323;color:white;font-family:Comic Sans MS}
 h1 {text-align:center;font-size:50px;}
 h2 {text-align:left;font-size:40px;}
-h3 {text-align:center;font-size:20px;color:#ff6666;}
+
+h3 {
+	text-align:center;
+	font-size:20px;
+}
+
+.disclaim{
+	color:#ff6666;
+	border-style:double;
+	background:#000000;
+	width:70%;
+}
+
 ul {font-size:30px;}
 p {font-size:25px;}
 
 </style>
 <div style="height:0px; width:0px; position: relative; right: 0px; top:0px;">
-	<img src="images/arrenPfpV2.jpg" alt="Arren's face edited on to a warped shiba inu. Reddish-orange noise is overlayed." width=100; height=100; title="Hey, there. Hope you're having a good day. :)">
+	<img style="transform: rotate(-15deg);" src="images/arrenPfpV2.jpg" alt="Arren's face edited on to a warped shiba inu. Reddish-orange noise is overlayed." width=100; height=100; title="Hey, there. Hope you're having a good day. :)">
 	<div style="position: relative; left:115px; bottom:100px; color:orange">
 	<- this guy
 	</div>
 </div>
 <h1>Arren Meuchel's <i><span style="color:#cc0099;">Webpage</span></i>
 </h1>
-<h3>This page is a constant work in progress. Please send any questions, concerns, or suggestions to the email below.</h3>
+
+<script>
+	function closeDisclaim(){
+		document.querySelector(".disclaim").remove();
+	}
+</script>
+
+<div align=center>
+	<h3 class="disclaim" onclick="closeDisclaim()">This page is a constant work in progress. Please send any questions, concerns, or suggestions to the email below. <br> [Click to close]</h3>
+</div>
+
 <p id="bio">Arren is a 
 <script  type="text/javascript">
 	//function courtesy of https://stackoverflow.com/a/24181701
@@ -102,6 +124,7 @@ Arren also:
 		<li><a href="mailto:arren.meuchel@gmail.com">Email <img src="images/gmailFavi.ico"; alt="Gmail Logo"; width=25; height=25;></a>
 	</ul>
 </p>
+
 
 <h2>Subpages</h2>
 <p>
