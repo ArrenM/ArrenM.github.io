@@ -64,6 +64,22 @@ h3 {
 	justify-content: space-around;
 }
 
+.feed-title{
+	font-size:20px;
+}
+
+.feed-item-title{
+	font-size:15px;
+	text-align:right;
+	background:#454545;
+}
+
+.feed{
+	background:#343434;
+	border-style:solid;
+	border-radius: 5px;
+}
+
 ul {font-size:30px;}
 p {font-size:25px;}
 
@@ -158,6 +174,10 @@ Arren also:
 			</ul>
 		</p>
 	</div>
+
+	<div class="feed">
+		<script src="https://rss.bloople.net/?url=https%3A%2F%2Fgithub.com%2FArrenM%2FArrenM.github.io%2Fcommits%2Fmain.atom&limit=9&showtitle=false&type=js"></script>
+	</div>
 </div>
 
 <div class="container">
@@ -165,7 +185,7 @@ Arren also:
 		<h2>Also Check Out These Cool People</h2>
 		<p>
 			<ul id="also" data-alpha>
-				<li><a href="https://latticeparable.tumblr.com" title="Lattice Parable on Tumblr">Lattice Parable</a></li>
+				<li><a href="https://latticeparable.tumblr.com">Lattice Parable</a></li>
 				<li><a href="https://jonbois.bsky.social">Jon Bois</a></li>
 				<li><a href="https://www.shawnthemiller.com/">ShawnTheMiller</a></li>
 				<li><a href="http://teamew.bsky.social/">TeaMew</a></li>
@@ -182,7 +202,7 @@ Arren also:
 
 	<script  type="text/javascript">
 			//script courtesy of https://stackoverflow.com/a/43443161
-			var initialDate = new Date(2025, 1, 13); //january is month 0
+			var initialDate = new Date(2025, 1, 18); //january is month 0
 			var now = Date.now();
 			var difference = now - initialDate;
 			var millisecondsPerDay = 24 * 60 * 60 * 1000;
