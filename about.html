@@ -6,9 +6,29 @@
 <body>
   <script src="js/main.js"></script>
   <script src="js/contents.js" numbered="true"></script>
+
   <h1>About</h1>
   <h2>About Me</h2>
-  <p>Arren Meuchel is a human being.</p>
+  <ul>
+    <li>He/Him/They/Them</li>
+    <li id="age"></li>
+    <li>USAmerican (Central Time Zone)</li>
+  </ul>
+  I mostly just talk about <i>Transformers</i>. But also video games (and
+  development thereof), mathematics, comics, etc. etc.
   <h2>About This Site</h2>
-  <p>This site is very incomplete.</p>
+  <p>Here you will find:
+    <ul>
+      <li><a href="index.html">Links</a></li>
+      <li>Information</li>
+      <li>Other things</li>
+    </ul>
+  </p>
+
+  <script>
+    const now = new Date();
+    const bd = new Date(2006, 3, 3);
+    const age = new Date(now - bd).getFullYear() - 1970;
+    document.getElementById("age").innerText = age + " years old";
+  </script>
 </body>

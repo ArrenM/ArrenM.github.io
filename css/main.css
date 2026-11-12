@@ -11,3 +11,8 @@ a {
 nav.topnav {
   word-spacing: 10px;
 }
+
+footer {
+  position: absolute;
+  bottom: 15pt;
+}
