@@ -9,10 +9,10 @@ a {
 }
 
 nav.topnav {
-  word-spacing: 10px;
+  margin-bottom: 2%;
 }
 
 footer {
-  position: absolute;
+  position: sticky;
   bottom: 15pt;
 }

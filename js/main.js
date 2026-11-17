@@ -1,7 +1,6 @@
 var navlinks = {
   Home: "index.html",
   About: "about.html",
-  "On Transformers": "transformers/index.html",
 };
 
 var loc = window.location.pathname.toLowerCase().split("/");
