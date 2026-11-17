@@ -2,6 +2,7 @@ var navlinks = {
   Home: "index.html",
   About: "about.html",
   "On Transformers": "transformers/index.html",
+  "Disclaimers and Copyright": "disclaimer.html",
 };
 
 var loc = window.location.pathname.toLowerCase().split("/");
@@ -16,7 +17,12 @@ topnav.className = "topnav";
 
 for (link in navlinks) {
   topnav.innerHTML +=
-    '<a href="' + dir + navlinks[link] + '">' + link + "</a>\n";
+    '<a style="margin-left:0.5%; margin-right:0.5%" href="' +
+    dir +
+    navlinks[link] +
+    '">' +
+    link +
+    "</a>\n";
 }
 
 document.body.appendChild(topnav);

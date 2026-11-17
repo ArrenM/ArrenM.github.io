@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
         if (numbered == "true") {
           table.innerHTML += i + " - ";
         }
-        table.innerHTML += '<a href="#' + i + '">' + heading.innerHTML + "</a>";
+        table.innerHTML +=
+          '<a href="#' + heading.innerHTML + '">' + heading.innerHTML + "</a>";
         table.innerHTML += "</colgroup>";
         heading.append(anchor);
       }
